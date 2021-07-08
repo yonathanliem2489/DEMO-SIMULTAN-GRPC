@@ -7,7 +7,7 @@ This demo is for implement grpc with reactor
 Features :
 1. Integration GRPC Interface with validator
 2. Integration GRPC Server with unit test
-3. Integration GRPC client with unit test (grpc mock) and live test
+3. Integration GRPC Client with unit test (grpc mock) and live test
 
 ### Requirement
 1. Spring boot 2.4.x
@@ -16,6 +16,8 @@ Features :
 4. Junit Jupiter
 
 ### Configuring GRPC Interface
+GRPC Interface is module for setup proto model request and response contract
+
 
 ```xml
 <properties>
@@ -74,6 +76,7 @@ mvn clean install
 
 
 ### Configuring GRPC Server
+GRPC Server is module for setup grpc server
 
 Add this starter library to your project.
 
@@ -231,6 +234,7 @@ public class ExampleServiceIT {
 Run demo grpc server service 
 
 ### Configuring GRPC Client
+GRPC Client is module for setup grpc client
 
 Setup dependency
 
